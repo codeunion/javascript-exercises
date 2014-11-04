@@ -5,8 +5,8 @@ type](http://glossary.codeunion.io/data-types) that represents letters and words
 is known as a [string](http://glossary.codeunion.io/string-data-type)
 
 
-Before you get started, I'd recommend skimming the [documentation for 
-strings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#Description).
+Before getting started, skim the [documentation for
+String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#Description).
 Of particular interest are:
  * [The description](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#Description).
  * [The list of
