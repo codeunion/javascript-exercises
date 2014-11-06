@@ -2,8 +2,10 @@
 
 Working with JavaScript in the browser and in node.js requires an understanding of how events work. Then, to write _evented_ JavaScript, you need to be familiar with the notion of a _callback_ function.
 
-* [Event](http://glossary.codeunion.io/events)
-* [Callbacks](http://glossary.codeunion.io/callbacks)
+For a more general definition of these terms, visit the [glossary](http://glossary.codeunion.io/) entries:
+
+* [Event](http://glossary.codeunion.io/event)
+* [Callbacks](http://glossary.codeunion.io/callback)
 
 With events, you can write code that says "when this happens, run this function". For example, maybe a user clicks a button on your web page which makes some modal window appear.
 
