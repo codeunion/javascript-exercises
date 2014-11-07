@@ -20,12 +20,20 @@ There are three components to writing an event listener in JavaScript:
 
 Here is an example of an event listener that would run in the browser:
 
-```javascript
-var button = document.getElementById("click-me");
+```html
+<html>
+  <body>
+    <button id="click-me">Press</button>
+  </body>
 
-button.addEventListener('click', function(evt) {
-  alert('You clicked me!');
-});
+  <script type="text/javascript">
+    var button = document.getElementById("click-me");
+
+    button.addEventListener('click', function(evt) {
+      alert('You clicked me!');
+    });
+  </script>
+</html>
 ```
 
 In the code above, the `button` is the event **target** (the button element that
@@ -39,6 +47,8 @@ function(evt) {
 ```
 
 is the **callback** (the code that will run when the event is triggered).
+
+In node.js,
 
 ## Exercises
 
