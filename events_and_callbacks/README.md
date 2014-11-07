@@ -1,13 +1,8 @@
 # Events and Callbacks
 
-Working with JavaScript in the browser and in node.js requires an understanding of how events work. Then, to write _evented_ JavaScript, you need to be familiar with the notion of a _callback_ function.
+Working with JavaScript requires an understanding of how [events](http://glossary.codeunion.io/event) work. Then, to write _evented_ JavaScript, you need to be familiar with the notion of a [callback](http://glossary.codeunion.io/callback) function.
 
-For a more general definition of these terms, visit the [glossary](http://glossary.codeunion.io/) entries:
-
-* [Event](http://glossary.codeunion.io/event)
-* [Callbacks](http://glossary.codeunion.io/callback)
-
-With events, you can write code that says "when this happens, run this function". For example, maybe a user clicks a button on your web page which makes some modal window appear.
+With events, you can write code that says "when this happens, run this function". For example, a user clicks a button on your web page which makes a modal window appear.
 
 In both the browser and in node.js, you can write JavaScript code that _listens for_ and _responds to_ various events.
 
