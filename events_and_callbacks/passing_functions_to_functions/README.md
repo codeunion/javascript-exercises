@@ -37,29 +37,52 @@ Can you write functions with one parameter and then pass those functions to
 _another_ function?
 
 ```javascript
-var showMyBalance = function(messageFunction) {
-  var balance = 729;
-  console.log( __(balance) );
-}
+var conservativeSpender = function(balance)  {
+  return balance > 100;
+};
 
-var accountMessage = __(balance) {
-  return "You have " + String(balance) + " dollars in your account";
-}
+var liberalSpender = function(balance) {
+  return balance > 10;
+};
 
-showMyBalance(__);
-// should print "You have 729 dollars in your account"
-
-showMyBalance(function(__) {
-  if (__ < 100) {
-    return "You're running low on funds";
+var shouldIBuyThis = function(balance, spendingStrategy) {
+  if ( spendingStrategy(balance) ) {
+    return "Sure! I've got the money!";
   } else {
-    return __;
+    return "Nope! Gotta keep my savings up!";
   }
-});
-// should print "You're doing ok."
-```
+}
 
-Search suggestion: `named vs anonymous functions javascript`
+shouldIBuyThis(20, __);
+// should evaluate to "Nope! Gotta keep my savings up!"
+
+shouldIBuyThis(20, __);
+// should evaluate to "Sure! I've got the money!"
+
+shouldIBuyThis(__, function(balance) {
+  return balance > 1000;
+});
+// should evaluate to "Nope! Gotta keep my savings up!"
+
+var horribleSaver = function(balance) {
+  return balance > 0;
+};
+
+shouldIBuyThis(__, horribleSaver);
+// should evaluate to "Sure! I've got the money!"
+
+function smarterShouldIBuyThis(cost, balance, strategy) {
+  var futureBalance = balance - cost;
+   if ( __(futureBalance) ) {
+    return "Sure! I've got the money!";
+  } else {
+    return "Nope! Gotta keep my savings up!"
+  }
+}
+
+smarterShouldIBuyThis(50, 45, horribleSaver);
+// should evaluate to "Nope! Gotta keep my savings up!"
+```
 
 ### Calling a function more than once with callbacks
 
