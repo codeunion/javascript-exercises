@@ -39,6 +39,8 @@ Can you get the computer to tell you how long a string is?
 // Should evaluate to 17
 ```
 
+Search suggestions: Find string length in Javascript
+
 ### Replace, plz.
 How about swap some words around?
 
@@ -50,6 +52,8 @@ How about swap some words around?
 // Should evaluate to "Dead men tell no rails"
 ```
 
+Search suggestion: Replace word in string in Javascript
+
 ### What's inside?
 Maybe find a string inside a string?
 
@@ -59,6 +63,8 @@ Maybe find a string inside a string?
 "When there is nothing you can find".__("something")
 // Should evaluate to null
 ```
+
+Search suggestion: Find within a string in Javascript
 
 ### Break it apart!
 Can you turn a string into an array?
@@ -71,6 +77,8 @@ Can you turn a string into an array?
 "eggs, bacon, cheese, tomato, kale,".__(__)
 [ 'eggs', 'bacon', 'cheese', 'tomato', 'kale,' ]
 ```
+
+Search suggestion: Split a string into words in javascript
 
 ### Take a chunk!
 How about grabbing part of the string?
@@ -85,6 +93,8 @@ How about grabbing part of the string?
 "Weirdest Trait: Can lick elbow".__(-14)
 ```
 
+Search suggestion: Get section of a string in Javascript
+
 ### Where Did I Put That...
 How can we find the first location of a character?
 
@@ -98,6 +108,8 @@ How can we find the first location of a character?
 "Friend or foe?".__('E')
 // Should evaluate to -1
 ```
+
+Search suggestion: Find a characters location in a string in Javascript
 
 ### The Other Way Round!
 
@@ -119,6 +131,8 @@ Could you connect some strings together?
 "Hey".__("Thats", "A", "Lot","Of","Words")
 // Should evaluate to "HeyThatsALotOfWords"
 ```
+
+Search suggestion: Append to a string in Javascript
 
 ### Escape! ESCAPE!
 
