@@ -7,24 +7,26 @@
 Can you get functions to return values from inside other functions?
 
 ```javascript
-var runThisFunction = function(otherFunction) {
-  return otherFunction();
+var animalToCatTranslator = function(sentence) {
+  return sentence.gsub('animal', 'cat');
 }
 
-runThisFunction(function() {
-  __ "I'm a string!";
-});
-// should evaluate to "I'm a string!"
+var animalToDogTranslator = function(sentence) {
+  return sentence.gsub('animal', 'dog');
+}
 
-var returnTrue = __() {
-  __ __;
-};
+var favoriteAnimal = function(animalTranslator) {
+  return animalTranslator("animals are the best!");
+}
 
-runThisFunction(returnTrue);
-// should evaluate to true
+favoriteAnimal(__)
+// should evaluate to "cats are the best"
+
+favoriteAnimal(__)
+// should evaluate to "dogs are the best"
 ```
 
-Search suggestion: `return value from function javascript`
+Search suggestion: `pass function as argument to another function javascript`
 
 > Functions are objects in JavaScript, which means that you can pass them as
 > arguments to other functions (just make sure not to include the `()`!).
