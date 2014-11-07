@@ -26,11 +26,13 @@ runThisFunction(returnTrue);
 
 Search suggestion: `return value from function javascript`
 
-> Functions are objects in JavaScript, which means that you can pass them as arguments to other functions (just make sure not to include the `()`!).
+> Functions are objects in JavaScript, which means that you can pass them as
+> arguments to other functions (just make sure not to include the `()`!).
 
 ### Functions inside of functions can take their own arguments
 
-Can you write functions with one parameter and then pass those functions to _another_ function?
+Can you write functions with one parameter and then pass those functions to
+_another_ function?
 
 ```javascript
 var showMyBalance = function(messageFunction) {
@@ -89,11 +91,13 @@ each([1,2,3], printQs);
 
 Search suggestion: `callback function javascript`
 
-> When you need to perform the some operation many times within a function, using a callback is an effective tool.
+> When you need to perform the some operation many times within a function,
+> using a callback is an effective tool.
 
 ### Use the return value of your callbacks
 
-Can you figure out how to write callback functions that give values back to their "caller"?
+Can you figure out how to write callback functions that give values back to
+their "caller"?
 
 ```javascript
 var map = function(array, callbackFunction) {
@@ -123,7 +127,8 @@ map([4, 5, 10], square);
 
 ### Doing comparisons in functions is useful for control flow
 
-Can you figure out how the `filter` function works and write callbacks to filter out certain elements from arrays?
+Can you figure out how the `filter` function works and write callbacks to filter
+out certain elements from arrays?
 
 ```javascript
 var filter = function(array, __) {
@@ -149,4 +154,5 @@ filter(["apple", "aardvark", "zoo", "arch", "goggles"], startsWithA);
 // should evaluate to ["apple", "aardvark", "arch"]
 ```
 
-> Conditionals are expressions that return boolean values. Functions can return an evaluated expression. Therefore...
+> Conditionals are expressions that return boolean values. Functions can return
+> an evaluated expression. Therefore...

@@ -1,10 +1,16 @@
 # Events and Callbacks
 
-Working with JavaScript requires an understanding of how [events](http://glossary.codeunion.io/event) work. Then, to write _evented_ JavaScript, you need to be familiar with the notion of a [callback](http://glossary.codeunion.io/callback) function.
+Working with JavaScript requires an understanding of how
+[events](http://glossary.codeunion.io/event) work. Then, to write _evented_
+JavaScript, you need to be familiar with the notion of a
+[callback](http://glossary.codeunion.io/callback) function.
 
-With events, you can write code that says "when this happens, run this function". For example, a user clicks a button on your web page which makes a modal window appear.
+With events, you can write code that says "when this happens, run this
+function". For example, a user clicks a button on your web page which makes a
+modal window appear.
 
-In both the browser and in node.js, you can write JavaScript code that _listens for_ and _responds to_ various events.
+In both the browser and in node.js, you can write JavaScript code that _listens
+for_ and _responds to_ various events.
 
 There are three components to writing an event listener in JavaScript:
 
@@ -22,7 +28,9 @@ button.addEventListener('click', function(evt) {
 });
 ```
 
-In the code above, the `button` is the event **target** (the button element that will fire the event), `'click'` is the event **type** (when the button is clicked, it fires a this type of event), and the function
+In the code above, the `button` is the event **target** (the button element that
+will fire the event), `'click'` is the event **type** (when the button is
+clicked, it fires a this type of event), and the function
 
 ```javascript
 function(evt) {
