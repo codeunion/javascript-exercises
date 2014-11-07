@@ -19,7 +19,7 @@ Of particular interest are:
 1. Run `node` in your terminal.
 2. Solve each of these exercises:
   * Replace the `__` with your solution in the `node` terminal.
-  * Verify the code does what you think it should
+  * Verify the code evaluates to the expected result.
   * Replace the puzzle in this readme with your solution.
   * Include a link to the documentation for the method you used to solve the
     problem.
