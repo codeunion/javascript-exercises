@@ -21,7 +21,7 @@ There are three components to writing an event listener in JavaScript:
 Here is an example of an event listener that would run in the browser:
 
 ```javascript
-var button = document.getElementById("#click-me");
+var button = document.getElementById("click-me");
 
 button.addEventListener('click', function(evt) {
   alert('You clicked me!');
