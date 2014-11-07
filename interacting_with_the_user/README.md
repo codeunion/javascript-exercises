@@ -9,3 +9,7 @@ For web applications, the user interface is the browser, which renders HTML with
 We're going to explore the ways that JavaScript allows for user interaction.
 
 ## Exercises
+
+### Level 1 - Collecting Input from the Command Line
+
+* [Command Line Arguments](command_line_arguments)
