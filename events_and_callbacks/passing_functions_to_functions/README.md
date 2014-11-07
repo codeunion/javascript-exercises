@@ -89,6 +89,22 @@ smarterShouldIBuyThis(50, 45, horribleSaver);
 Can you figure out how the functions below work and solve the missing pieces?
 
 ```javascript
+var doItThisManyTimes = function(numberOfTimes, callbackFunction) {
+  for (var i = 0; i < numberOfTimes; i++) {
+    callbackFunction();
+  }
+};
+
+doItThisManyTimes(5, __() {
+  __.__("wow!")
+});
+// should print
+// wow!
+// wow!
+// wow!
+// wow!
+// wow!
+
 var each = function(array, callbackFunction) {
   for (var i = 0; i < array.length; i++) {
     callbackFunction(array[i]);
