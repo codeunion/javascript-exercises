@@ -20,3 +20,4 @@ We're going to explore the ways that JavaScript allows for user interaction.
 ### Level 1 - Collecting Input from the Command Line
 
 * [Command Line Arguments](command_line_arguments)
+* [STDIN and STDOUT](stdin_and_stdout)
