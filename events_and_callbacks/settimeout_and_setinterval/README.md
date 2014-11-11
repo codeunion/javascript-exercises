@@ -1,7 +1,22 @@
 # setTimeout and setInterval
 
-[Documentation for Window Timers](https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers)
-[Documentation for Node.js Timers](http://nodejs.org/docs/v0.6.1/api/timers.html)
+Both node.js and the browser implement methods that let us write _timed_ code:
+`setInterval` and `setTimeout`.
+
+In other words, we can say things like "wait 5 minutes, then run this code" or
+"execute this function every 20 seconds".
+
+The various applications for this kind of code are many. Anytime you have code
+whose execution depends on time, you may reach for these methods.
+
+For the most part, these methods will work the same whether you run them in the
+browser or in node.js. It is important to recognize that these are different
+environments, so you should never expect timers to work _exactly_ the same.
+
+**Documentation references:**
+
+- [Documentation for Window Timers](https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers)
+- [Documentation for Node.js Timers](http://nodejs.org/docs/v0.6.1/api/timers.html)
 
 ## Exercises
 
