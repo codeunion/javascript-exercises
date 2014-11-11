@@ -32,7 +32,7 @@ seriously
 seriously
 bye
 bye
-^C
+^C # this is what typing CTRL-C looks like in the shell
 ```
 
 Let's play with `STDIN` and `STDOUT` in the context of node.js programs.
