@@ -19,7 +19,8 @@ Search suggestion: `delay execution node.js`
 
 ### Delayed execution can be weird to understand
 
-Make a hypothesis about what the following code will do. Then run it. Did it do what you expected? If not, why not?
+Make a hypothesis about what the following code will do. Then run it. Did it do
+what you expected? If not, why not?
 
 ```javascript
 console.log("Before the timeout");
@@ -50,7 +51,9 @@ Search suggestion: `cancel setTimeout function javascript`
 
 ### Timers aren't perfect timers
 
-The following code may be confusing. Make a hypothesis about what you think it will do, then test your hypothesis by running the code. Did it do what you expected? Why or why not?
+The following code may be confusing. Make a hypothesis about what you think it
+will do, then test your hypothesis by running the code. Did it do what you
+expected? Why or why not?
 
 ```javascript
 console.log("Before the timeout");
@@ -83,7 +86,8 @@ Search suggestion: `syntax setTimeout function javascript`
 
 ### An example of a potential use case
 
-Can you complete the code below to configure a session timeout feature (like what you might find in an online banking account, for example)?
+Can you complete the code below to configure a session timeout feature (like
+what you might find in an online banking account, for example)?
 
 ```javascript
 var warnTimeout = function() {
@@ -116,7 +120,9 @@ Search suggestion: `call function repeatedly at set times javascript`
 
 ### Forever is a long time
 
-So it may be useful to be able to stop your perpetual motion machine after starting it. Can you figure out how to make a stopwatch that counts the seconds from 0 but actually **stops** after 5 seconds?
+So it may be useful to be able to stop your perpetual motion machine after
+starting it. Can you figure out how to make a stopwatch that counts the seconds
+from 0 but actually **stops** after 5 seconds?
 
 ```javascript
 var time = 0;
@@ -138,7 +144,8 @@ Search suggestion: `stop function in setInterval javascript`
 
 ### Working with timer IDs for maximum power
 
-You can have more than one interval going at once, you know. Can you reason about the following code and see if you can understand what is going on?
+You can have more than one interval going at once, you know. Can you reason
+about the following code and see if you can understand what is going on?
 
 ```javascript
 var index = 0;
@@ -160,7 +167,8 @@ monitorID = setInterval(monitor, 500);
 
 ### A full-fledged egg timer
 
-Can you put it all together now and complete the implementation for a working timer that counts down from x seconds to zero?
+Can you put it all together now and complete the implementation for a working
+timer that counts down from x seconds to zero?
 
 ```javascript
 var countDown = function(startTime) {
