@@ -160,3 +160,126 @@ Search suggestion: `javascript store value in variable`
 > Even though the JavaScript in this example is split between two `<script>`
 > tags, it all runs in the same context. Variables declared in one script will
 > be accessible to all other scripts on the same page.
+
+### Put your JavaScript in its own file
+
+While it is quick and easy to write JavaScript code within the `<script>` tags
+on your HTML document, it is not a great practice. As a rule of thumb, you want
+to separate HTML, CSS, and JavaScript into their own files.
+
+Luckily, it is easy enough to load in an external JavaScript file using the very
+same `<script>` tag as before.
+
+**Note**: to complete this exercise, you need to create a separate file
+`my_script.js` where you will write your JavaScript code. Make sure it is in the
+same directory as `page.html`.
+
+Can you figure out how to appropriately load `my_script.js` into `page.html` so
+that it writes the time in the same way as before?
+
+`my_script.js`:
+
+```javascript
+// store the time string in it's own variable
+var timeString = new Date().toString();
+```
+
+`page.html`:
+
+```html
+<!DOCTYPE html>
+<html>
+  <script type="text/javascript" __="__.js"></script>
+
+  <body>
+    <h2>What time is it?</h2>
+
+    <p>
+      The time is <strong><script type="text/javascript">document.write(timeString)</script></strong> where you are.
+    </p>
+  </body>
+</html>
+```
+
+Search suggestion: `how to load external javascript file in html`
+
+### Importing scripts from anywhere
+
+If we can load our own scripts from other files, why not load scripts that other
+people have written? For example, what about a third-party library like
+`jQuery`?
+
+Can you figure out how to import the [jQuery library](http://jquery.com/) into
+the page? Once you get it to work, you will see an alert appear.
+
+`page.html`:
+
+```html
+<!DOCTYPE html>
+<html>
+  <script type="text/javascript" src="__"></script>
+
+  <body>
+    <h2>Waiting for jQuery...</h2>
+    <script type="text/javascript">
+      // The jQuery variable is defined by the jQuery library. If the library is
+      // loaded, this variable will evaluate to a truthy value.
+      if (jQuery) {
+        alert("We have jQuery!");
+      }
+    </script>
+  </body>
+</html>
+```
+
+Search suggestion: `import jquery`
+
+> As you dig around, you may notice that there is more than one way to import
+> jQuery (or any other library, for that matter). Because the `src` attribute of
+> a `<script>` tag can contain _either_ the name of a file on the same web
+> server _or_ a URL to a file hosted on some other web server (like a CDN), you
+> can choose to download the library and link to it with a `src` attribute like
+> `jquery-1.11.1.js` or you can link directly to an external host with a `src`
+> attribute like
+> `http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js`.
+
+### Be careful where you run that script
+
+If you are loading multiple scripts, does it matter in which order they are
+loaded? Think about that question for a moment before diving into this exercise.
+
+Can you modify the HTML file below (by moving the lines of code around - you
+don't need to _change_ any line) so that it will show an alert message telling
+you that jQuery has loaded?
+
+`page.html`:
+
+```html
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>Did you see an alert yet?</h2>
+
+    <script type="text/javascript" src="my_script.js"></script>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  </body>
+</html>
+```
+
+`my_script.js`:
+
+```javascript
+// The jQuery variable is defined by the jQuery library. If the library is
+// loaded, this variable will evaluate to a truthy value.
+if (jQuery) {
+  alert("We have jQuery!");
+}
+```
+
+Search suggestion: `should script tags be in head or body`
+
+> Remember: the browser reads HTML from top to bottom. When it encounters a
+> `<script>` tag, it will execute the JavaScript right then and there, _whether_
+> _or not_ any dependencies (like jQuery, in this example) have been loaded
+> already.
