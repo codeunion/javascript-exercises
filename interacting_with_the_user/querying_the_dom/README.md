@@ -251,6 +251,10 @@ How did we select elements on the DOM before the advent of the selectors API,
 you ask? There were a few options. In fact, they're all still around, so you can
 try them out yourself.
 
+All of these methods can be found in the
+[Element API](https://developer.mozilla.org/en-US/docs/Web/API/Element)
+documentation. They all start with the word `get`, too.
+
 Can you select the same elements as before _without_ using `querySelector()` or
 `querySelectorAll()`?
 
@@ -288,6 +292,5 @@ console.log(subscribeEmail);
 // <input type=​"email" name=​"email-address" placeholder=​"your@email.com">​
 ```
 
-> Hint: all of these methods can be found in the
-> [Element API](https://developer.mozilla.org/en-US/docs/Web/API/Element)
-> documentation. They all start with the word `get`, too.
+> A word of warning: be aware of pluralization when using these methods. You
+> write `getElementById()` but `getElementsByClassName()`. Not the same.
