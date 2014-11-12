@@ -9,6 +9,12 @@ You may be wondering _how_ to use JavaScript on a web page. Good question! That
 is exactly what we are going to focus on in these exercises: the various ways to
 add JavaScript to a page.
 
+As you move through these exercises, you may want to keep these pages open for
+reference and learning:
+
+- [Douglas Crawford's explanation of script tags](http://javascript.crockford.com/script.html)
+- [MDN Documentation on the script tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script)
+
 ## Exercises
 
 **Note**: to complete these exercises, you will need to create an HTML file
@@ -21,13 +27,9 @@ browser.
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Embedding JavaScript</title>
-</head>
-<body>
-  <h1>JavaScript is fun</h1>
-
-  <p>Did you know that JavaScript is the <em>lingua franca</em> of the web?</p>
-</body>
+  <body>
+    <h1>JavaScript is fun</h1>
+    <p>Did you know that JavaScript is the <em>lingua franca</em> of the web?</p>
+  </body>
 </html>
 ```
