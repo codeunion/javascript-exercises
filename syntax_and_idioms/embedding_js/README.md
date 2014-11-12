@@ -93,8 +93,6 @@ learn about how the browser loads a page from this example?
     <h2>This should appear first</h2>
 
     <__ type="__/__">
-      document.write("<h2>and then JavaScript will write this...</h2>");
-
       confirm("Shall we keep going?");
     </__>
 
@@ -107,3 +105,58 @@ learn about how the browser loads a page from this example?
 > `<script>` tag in the page, the browser will stop loading the rest of the HTML
 > page to run the JavaScript, and then it will continue loading the page only
 > after the JavaScript has finished executing.
+
+### Inline scripts can print text to the page
+
+Can you figure out how to make the code below print the current time onto the
+HTML page?
+
+```html
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>What time is it?</h2>
+
+    <p>
+      The time is <strong><script type="text/javascript">document.__( new Date().toString() );</script></strong> where you are.
+    </p>
+  </body>
+</html>
+```
+
+Search suggestion: `javascript write text to document`
+
+> What's that `new Date().toString()` code? That is a how, in JavaScript, we can
+> say "get me the current date and time, and then convert it to a String".
+
+### Think global, act local
+
+So that last example left us with a lot of JavaScript in one `<script>` tag.
+What if we wanted to break it up, so that one script created the time string
+while the other wrote it to the page?
+
+Can you modify the code below so that it renders the same time as before, but
+using a variable instead to store the time string?
+
+```html
+<!DOCTYPE html>
+<html>
+  <script type="text/javascript">
+    var __ = new Date().toString();
+  </script>
+
+  <body>
+    <h2>What time is it?</h2>
+
+    <p>
+      The time is <strong><script type="text/javascript">document.__(__)</script></strong> where you are.
+    </p>
+  </body>
+</html>
+```
+
+Search suggestion: `javascript store value in variable`
+
+> Even though the JavaScript in this example is split between two `<script>`
+> tags, it all runs in the same context. Variables declared in one script will
+> be accessible to all other scripts on the same page.
