@@ -40,14 +40,14 @@ Create a file called `page.html` and paste the following code into it:
   <h1 id="title">Smoothie Time</h1>
 
   <p>
-    Everyone likes smoothies.
+    Everyone likes smoothies. My favorite is <span class="fruit">blueberry.</span>
   </p>
 
   <h2>A list of fruits</h2>
 
-  <ul class="fruits">
-    <li class="fruit">apples</li>
-    <li class="fruit">oranges</li>
+  <ul id="fruit-list">
+    <li class="fruit">apple</li>
+    <li class="fruit">orange</li>
     <li class="fruit">papaya</li>
     <li class="fruit">durian</li>
   </ul>
@@ -56,31 +56,238 @@ Create a file called `page.html` and paste the following code into it:
     Sign up for our email newsletter.
   </p>
 
-  <form name="newsletter-signup" method="post">
+  <form class="subscribe-form" name="newsletter-signup" method="post">
     <input type="email" name="email-address" placeholder="your@email.com">
 
     <input type="submit" value="Sign up">
   </form>
-
-  <script src="my_script.js" type="text/javascript"></script>
 </body>
 </html>
 ```
 
-**You do not need to change this page**. All of your work will go into a
-JavaScript file called `my_script.js` (notice how the HTML above expects this).
-Make sure to create that file as well.
+**You do not need to change this page**.
+
+To complete the exercises, open `page.html` in your browser and then open the
+[browser's development console](http://webmasters.stackexchange.com/questions/8525/how-to-open-the-javascript-console-in-different-browsers).
+Type your JavaScript code directly into the console.
 
 ### Find a single element
 
+Start by selecting just one element from the page. Can you find the right method
+for the `document` object, which, when you pass it a CSS-like selector, will
+return a DOM element?
+
+You should use
+[this page on DOM selection](https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/Locating_DOM_elements_using_selectors)
+as a primary reference.
+
+```javascript
+var title = document.__("#title");
+
+console.log(title);
+// should print:
+// <h1 id="title">Smoothie Time</h1>
+```
+
+Search suggestion: `select single element from the DOM javascript`
+
+> There are actually multiple ways to accomplish this. You may stumble into
+> `document.getElementById()`, but in this case we want to focus on the new and
+> improved
+> [`document.querySelector()` method](https://developer.mozilla.org/en-US/docs/Web/API/Element.querySelector).
+
 ### Find multiple elements
+
+What if you want to retrieve _more_ than just one element? Can you find the
+right method to select all of the `<li>` elements with the class `fruit`?
+
+```javascript
+var fruits = document.__("li.fruit");
+
+console.log(fruits);
+// should print something like:
+// [<li class=​"fruit">​apple</li>​, <li class=​"fruit">​orange</li>​, <li class=​"fruit">​papaya​</li>​, <li class=​"fruit">​durian​</li>​]
+```
+
+Search suggestion: `select multiple elements from the DOM` (note: you can
+exclude links to jQuery methods by addign `-jquery` to your search)
+
+> Note the [CSS-like selector syntax](https://developer.mozilla.org/en-
+> US/docs/Web/Guide/CSS/Getting_started/Selectors) that is used by both the
+> `querySelector()` and `querySelectorAll()` methods. You can pass them strings
+> that follow a similar syntax to select elements in the same way you would in
+> CSS.
+
+### Search by tag name
+
+Can you select all of the `<p>` elements on the page?
+
+```javascript
+var paragraphs = document.__(__);
+
+console.log(paragraphs);
+// should print something like:
+// [p, p]
+```
+
+Search suggestion: `javascript search for elements by tag name querySelector`
+
+> Which method did you use: `querySelector()` or `querySelectorAll()`? What
+> happens if you use the other one? Try it!
 
 ### Search by id
 
+Can you select the element with id `fruit-list`?
+
+```javascript
+var fruitList = document.__(__);
+
+console.log(fruitList);
+// should print something like:
+// <ul id=​"fruit-list">​…​</ul>
+```
+
+Search suggestion: `javascript find elements by id using querySelector`
+
+> Don't forget to prepend your id selector with a `#`!
+
 ### Search by class name
+
+Can you select all elements that have the class name `fruit`?
+
+```javascript
+var allFruit = document.__(__);
+
+console.log(allFruit);
+// should print something like:
+// [span.fruit, li.fruit, li.fruit, li.fruit, li.fruit]
+```
+
+Search suggestion: `javascript find elements by class using querySelector`
+
+> Don't forget to prepend your id selector with a `.`!
 
 ### Search by class name part two
 
+Hmm... that last query wasn't quite what we were looking for. What we really
+wanted was to select all of the elements with class `fruit` that appear in the
+`fruit-list`.
+
+In other words, we don't want that pesky `<span>` tag in the results.
+
+Can you write a new query which returns _only_ the elements with class `fruit`
+that are inside of the `<ul id="fruit-list">` element?
+
+```javascript
+var fruitInTheList = document.__(__);
+
+console.log(fruitInTheList);
+// should print something like:
+// [li.fruit, li.fruit, li.fruit, li.fruit]
+```
+
+> If you are unsure of how to accomplish this, remember that you can combine
+> selectors in a single query string. For example, `"p .button"` will select all
+> tags with class `button` inside of a `<p>` tag. This comes straight from the
+> CSS selector syntax, so if your research doesn't yield good results when
+> searching for JavaScript solutions, you could try searching for things like
+> `css select nested elements`.
+
 ### Search by attribute name
 
+There are all kinds of selectors beyond tag name, class, and id. One of the
+common ones is to search by other attributes such as the `name` attribute.
+
+Can you write a query which returns the `<input>` tag with a `name` attribute of
+`email-address`?
+
+```javascript
+var subscribeEmail = document.__(__)
+
+console.log(subscribeEmail);
+// should print something like:
+// <input type=​"email" name=​"email-address" placeholder=​"your@email.com">​
+```
+
+Search suggestion: `select element by name attribute`
+
+> To be even more specific, try searching only for tags within the
+> `newsletter-signup` form.
+
+### All in the family
+
+One you have selected an element, you can _traverse_ the DOM tree (go up or
+down). When discussing the tree, we use the same language as family trees, as
+the metaphor applies quite nicely.
+
+Can you figure out what properties of an element will return their **child** and
+**parent** elements?
+
+```javascript
+var fruitList = document.querySelector("#fruit-list");
+
+console.log(fruitList.__)
+// should print something like:
+// [<li class=​"fruit">​apple​</li>​, <li class=​"fruit">​orange​</li>​, <li class=​"fruit">​papaya​</li>​, <li class=​"fruit">​durian​</li>​]
+
+console.log(fruitList.__)
+// should print something like:
+// <body>​…​</body>
+```
+
+Search suggestion: `javascript get child elements` &
+`javascript get parent element`
+
+> In addition to _children_ and _parents_, elements also have _descendants_,
+> _ancestors_, and _siblings_. There is no built-in method for these, though. If
+> you're up for a challenge, you could try implementing them.
+
 ### The old ways are still with us
+
+Once upon a time, there was no `querySelector()` and `querySelectorAll()`. These
+methods are relative newcomers on the scene.
+
+How did we select elements on the DOM before the advent of the selectors API,
+you ask? There were a few options. In fact, they're all still around, so you can
+try them out yourself.
+
+Can you select the same elements as before _without_ using `querySelector()` or
+`querySelectorAll()`?
+
+```javascript
+// instead of document.querySelectorAll("p")...
+var paragraphs = document.__("p");
+
+console.log(paragraphs);
+// should return something like:
+// [p, p]
+
+// instead of document.querySelector("#fruit-list")...
+var fruitList = document.__("fruit-list");
+console.log(fruitList);
+// should return something like:
+// <ul id=​"fruit-list">​…​</ul>
+
+
+// instead of document.querySelectorAll(".fruit")...
+var allFruit = document.__("fruit");
+console.log(allFruit);
+// should return something like:
+// [span.fruit, li.fruit, li.fruit, li.fruit, li.fruit]
+
+// instead of document.querySelectorAll("#fruit-list .fruit")...
+var fruitInTheList = document.__("fruit-list").__("fruit");
+console.log(fruitInTheList);
+// should return something like:
+// [li.fruit, li.fruit, li.fruit, li.fruit]
+
+// instead of document.querySelector("input[name='email-address']")...
+var subscribeEmail = document.__("email-address")
+console.log(subscribeEmail);
+// should return something like:
+// <input type=​"email" name=​"email-address" placeholder=​"your@email.com">​
+```
+
+> Hint: all of these methods can be found in the
+> [Element API](https://developer.mozilla.org/en-US/docs/Web/API/Element)
+> documentation. They all start with the word `get`, too.
