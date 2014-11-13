@@ -76,6 +76,64 @@ above? This is how your JS will be loaded into the page and executed.
 
 ### Reading element properties
 
+First order of business: exploring the properties of DOM elements. What kind of
+information do they hold?
+
+Can you find the right properties to read data about the `<ul id="fruit-list">`
+element on the page?
+
+`my_script.js`:
+
+```javascript
+// select the <ul id="fruit-list"> element
+var fruitList = document.querySelector("#fruit-list");
+
+// get the element's id
+console.log(fruitList.__)
+// should print something like:
+// fruit-list
+
+// get the name of the element's tag
+console.log(fruitList.__)
+// should print something like:
+// UL
+
+// get the HTML contents of the element
+console.log(fruitList.__)
+// should print something like:
+// <li class="fruit">apple</li>
+// <li class="fruit">orange</li>
+// <li class="fruit">papaya</li>
+// <li class="fruit">durian</li>
+
+// get the text contents of the element
+console.log(fruitList.__)
+// should print something like:
+// apple
+// orange
+// papaya
+// durian
+
+// get the HTML of the element (including itself + contents)
+console.log(fruitList.__)
+// should print something like:
+// <ul id="fruit-list">
+//   <li class="fruit">apple</li>
+//   <li class="fruit">orange</li>
+//   <li class="fruit">papaya</li>
+//   <li class="fruit">durian</li>
+// </ul>
+```
+
+Search suggestion: for each of the examples above, you can try using variations
+of the search pattern `how to get __ property of DOM element`
+
+> Tip: instead of writing all of these out at once in your `my_script.js` file,
+> try them out one-by-one in your browser's developer console first. It is much
+> easier to practice learning new techniques in the small environment of a
+> console rather than the relatively larger environment of a full JS file. You
+> get the added bonus of immediate feedback.
+
 ### Writing element properties
 
 ### Dynamically changing CSS
