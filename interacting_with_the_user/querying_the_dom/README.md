@@ -128,6 +128,11 @@ var paragraphs = document.__(__);
 console.log(paragraphs);
 // should print something like:
 // [p, p]
+
+// and then grab the second paragraph from the collection
+console.log(paragraphs[__]);
+// should print something like:
+// <p>Sign up for our email newsletter.</p>
 ```
 
 Search suggestion: `javascript search for elements by tag name querySelector`
