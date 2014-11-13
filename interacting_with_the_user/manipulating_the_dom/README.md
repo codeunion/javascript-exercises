@@ -57,7 +57,7 @@ Create a file called `page.html` and paste the following code into it:
   </p>
 
   <form class="subscribe-form" name="newsletter-signup" method="post">
-    <input onload="focus()" type="email" name="email-address" placeholder="your@email.com">
+    <input type="email" name="email-address" placeholder="your@email.com">
 
     <input type="submit" value="Sign up">
   </form>
