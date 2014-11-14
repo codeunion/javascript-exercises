@@ -164,6 +164,27 @@ Search suggestion: `change text within element javascript`
 
 ### Dynamically changing CSS
 
+Every CSS style available to an element is also accessible through its `style`
+attribute.
+
+Can you change the list of fruits so that "orange" is shown as white text on an
+orange-colored background?
+
+```javascript
+var fruits = document.__(__);
+var orange = fruits[__];
+
+orange.__.__ = "orange"; orange.__.__ = "white";
+// should change the display so that the <li>orange</li> element is rendered in
+// white text on an orange background
+```
+
+Search suggestion: `change css of element javascript`
+
+> The code above takes a two-step approach to finding the appropriate `<li>`
+> element. Can you do it with a single call of `querySelector()`? Hint: you can
+> use the `:nth-child` pseudo-selector.
+
 ### Adding and removing classes
 
 ### Hide and show elements
