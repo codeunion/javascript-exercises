@@ -40,7 +40,7 @@ Create a file called `page.html` and paste the following code into it:
   <h1 id="title">Smoothie Time</h1>
 
   <p>
-    Everyone likes smoothies. My favorite is <span class="fruit">blueberry.</span>
+    Everyone likes smoothies. My favorite is <span class="fruit">blueberry</span>.
   </p>
 
   <h2>A list of fruits</h2>
@@ -136,7 +136,35 @@ of the search pattern `how to get __ property of DOM element`
 
 ### Writing element properties
 
+Some of the properties can be both read _and_ written. Meaning we can use
+JavaScript to modify those values whenever we please.
+
+Can you figure out how to change the text of the elements below?
+
+```javascript
+// select the <h1 id="title"> tag
+var title = document.__(__);
+var currentTitle = title.__;
+title.__ = "Super " + currentTitle + "!";
+// should change the text in the <h1 id="title"> tag to:
+// "Super Smoothie Time!"
+
+// select the "favorite fruit" tag
+var favoriteFruit = document.__(__);
+favoriteFruit.__ = "strawberry";
+// should change the text in the first <p> tag to:
+// "Everyone likes smoothies. My favorite is strawberry."
+```
+
+Search suggestion: `change text within element javascript`
+
+> There is actually more than one way to accomplish this task. Two of the main
+> options are the `Node.textContent` property and the `Element.innerHTML`
+> property. What are the differences between the two?
+
 ### Dynamically changing CSS
+
+### Adding and removing classes
 
 ### Hide and show elements
 
