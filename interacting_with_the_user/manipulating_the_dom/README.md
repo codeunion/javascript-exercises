@@ -188,7 +188,50 @@ Search suggestion: `change css of element javascript`
 
 ### Adding and removing classes
 
+So it is not good practice to change the styles of an element directly. The
+preferred way is to define styles in CSS and then apply those styles to an
+element using a class or id attribute.
 
+Let's say that we want to define styles that highlight an element (yellow
+background). To start, you will need to add a `<style>` tag to your HTML. It
+should go within a `<head>` tag, like this:
+
+```html
+<html>
+<head>
+  <style type="text/css">
+    .highlight {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+<!-- ... rest of document omitted -->
+```
+
+Can you figure out how to toggle classes on elements?
+
+```javascript
+var fruits = document.querySelectorAll("li.fruit");
+var papaya = fruits[2];
+
+var currentClasses = papaya.__;
+papaya.__ = currentClasses + " __";
+// should highlight the listing for "papaya" in yellow
+
+var favoriteFruit = document.querySelector("span.fruit");
+favoriteFruit.__ = "";
+// should remove the fruit class from the "favorite fruit" <span> element
+// verify by using the DOM inspector tool
+```
+
+Search suggestion: `javascript add class to element`
+
+> There is (surprise, surprise) more than one way to solve this problem. Newer
+> browsers implement the
+> [`classList`](https://developer.mozilla.org/en-US/docs/Web/API/Element.classList)
+> API for elements. Older browsers only support the `className` property, which
+> is expected in this exercise. If you are up for it, try solving using both.
 
 ### Hide and show elements
 
