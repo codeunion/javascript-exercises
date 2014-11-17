@@ -296,4 +296,41 @@ Search suggestion: `javascript remove element from DOM`
 
 ### Adding new elements
 
+Now that you know how to remove elements, let's learn how to move and add
+elements. In this case, we want to sort the list of fruits alphabetically.
+
+Can you figure out how to move the `"durian"` fruit to the correct location and
+then add a new fruit "pomegranate" to the list?
+
+**Note**: you will need to use two separate methods to complete this exercise.
+
+```javascript
+var fruits = document.querySelectorAll("li.fruit");
+var durian = fruits[3];
+var orange = fruits[1];
+
+durian.remove(); // remove "durian" from the DOM
+
+var fruitList = document.querySelector("ul#fruit-list"); // select parent element
+fruitList.__(durian, orange); // insert durian in proper location (before orange)
+// should show the fruits in alphabetical order
+
+var pomegranate = document.createElement("li"); // create new element
+pomegranate.innerText = "pomegranate"; // set text of element
+pomegranate.className = "fruit"; // set class of element
+
+fruitList.__(pomegranate); // add element to <ul id="fruit-list">
+// should add the <li class="fruit">pomegranate</li> to the end of the list
+```
+
+Search suggestion: `javascript add element to dom`
+
+> If you explore the
+> [Node object API](https://developer.mozilla.org/en-US/docs/Web/API/Node), you
+> will discover that there are a few different ways to add elements to the DOM.
+> The key pattern to be aware of when adding elements is: (1) select or create
+> the element to be added; (2) select the parent element to which you will be
+> adding a new element as a child; (3) use appropriate insertion method
+> depending on where in the list of children the new element should be added.
+
 ### Special methods of elements
