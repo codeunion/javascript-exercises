@@ -275,6 +275,25 @@ Search suggestion: `javascript hide and show elements`
 
 ### Deleting elements
 
+Showing and hiding elements is fine. But sometimes you want to get rid of an
+element entirely: not just hiding it from the view, but removing it from the
+DOM.
+
+Can you figure out how to remove the fruit `"durian"` from the list?
+
+```javascript
+var fruits = document.querySelectorAll("li.fruit");
+var durian = fruits[3];
+
+durian.__();
+// should remove the <li class="fruit">durian<li> element from the DOM
+// verify by using the DOM inspector tool
+```
+
+Search suggestion: `javascript remove element from DOM`
+
+> Here's a noodle scratcher: after you remove the element, where does it go?
+
 ### Adding new elements
 
 ### Special methods of elements
