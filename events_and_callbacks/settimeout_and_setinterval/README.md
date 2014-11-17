@@ -88,13 +88,18 @@ console.log("While loop finished");
 Can you complete the code below to create the desired behavior?
 
 ```javascript
-var timer = function(seconds) {
+var timer = function(seconds, callback) {
   var milliseconds = seconds * 1000;
   console.log("Setting timer for " + seconds + " seconds")
-  __(__() { console.log("Timer done!") }, __);
+  __(__, __);
 };
-timer(3)
-// should print "Timer done!" after a delay of 3 seconds
+
+var breadReminder = function() {
+  console.log("Bread is ready!");
+}
+
+timer(3, breadReminder)
+// should print "Bread is ready!" after a delay of 3 seconds
 ```
 
 Search suggestion: `syntax setTimeout function javascript`
