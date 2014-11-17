@@ -135,7 +135,7 @@ console.log(paragraphs[__]);
 // <p>Sign up for our email newsletter.</p>
 ```
 
-Search suggestion: `javascript search for elements by tag name querySelector`
+Search suggestion: `css selector to find elements by tag name`
 
 > Which method did you use: `querySelector()` or `querySelectorAll()`? What
 > happens if you use the other one? Try it!
@@ -152,7 +152,7 @@ console.log(fruitList);
 // <ul id=​"fruit-list">​…​</ul>
 ```
 
-Search suggestion: `javascript find elements by id using querySelector`
+Search suggestion: `css selector to find elements by id`
 
 > Don't forget to prepend your id selector with a `#`!
 
@@ -168,7 +168,7 @@ console.log(allFruit);
 // [span.fruit, li.fruit, li.fruit, li.fruit, li.fruit]
 ```
 
-Search suggestion: `javascript find elements by class using querySelector`
+Search suggestion: `css selector to find elements by class`
 
 > Don't forget to prepend your class selector with a `.`!
 
@@ -214,7 +214,7 @@ console.log(subscribeEmail);
 // <input type=​"email" name=​"email-address" placeholder=​"your@email.com">​
 ```
 
-Search suggestion: `select element by name attribute`
+Search suggestion: `css selector to find elements by name attribute`
 
 > To be even more specific, try searching only for tags within the
 > `newsletter-signup` form.
