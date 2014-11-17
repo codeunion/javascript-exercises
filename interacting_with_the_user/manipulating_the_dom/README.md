@@ -370,3 +370,12 @@ submitBtn.__("value", "JOIN ME");
 //   submitBtn.click();
 // }, 1000);
 ```
+
+### Challenge: get all element descendants
+
+Can you write a function `getDescendants()` that, when given an element as an
+argument, will return an array of all descendants of that element (i.e. its
+children, its children's children, its children's children's children, ...)?
+
+You may want to consider using
+[recursion](http://en.wikipedia.org/wiki/Recursion).
