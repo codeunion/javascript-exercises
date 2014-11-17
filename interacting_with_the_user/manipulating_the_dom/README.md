@@ -235,6 +235,44 @@ Search suggestion: `javascript add class to element`
 
 ### Hide and show elements
 
+Hiding an element in HTML is accomplished by setting its `display` style to
+`"none"`.
+
+Can you complete the code below so that the "papaya" fruit will be hidden and
+shown at 1 second intervals?
+
+```javascript
+var hideElement = function(element) {
+  element.style.display = "none";
+};
+
+var showElement = function(element) {
+  // this clears the display property so that the element inherits this style
+  element.style.display = "";
+};
+
+var toggleElement = function(element) {
+  if (element.style.display === "none") {
+    __(element);
+  } else {
+    __(element);
+  }
+};
+
+var fruits = document.querySelectorAll("li.fruit");
+var papaya = fruits[2];
+
+setInterval(function() {
+  toggleElement(__);
+}, 1000);
+```
+
+Search suggestion: `javascript hide and show elements`
+
+> This exercise is slightly more complicated, but it offers a good opportunity
+> to practice _reading_ and _interpreting_ the intent of a program. What is the
+> purpose of each function? How are the intended to be used?
+
 ### Deleting elements
 
 ### Adding new elements
