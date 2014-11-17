@@ -170,16 +170,16 @@ You can have more than one interval going at once, you know. Can you reason
 about the following code and see if you can understand what is going on?
 
 ```javascript
-var index = 0;
+var timesCounted = 0;
 var counter = function() {
-  console.log(index);
-  index++;
+  console.log(timesCounted);
+  timesCounted++;
 };
 var counterID = setInterval(counter, 100);
 
 var monitorID;
 var monitor = function() {
-  if (index > 20) {
+  if (timesCounted > 20) {
     clearInterval(counterID);
     clearInterval(monitorID);
   }
