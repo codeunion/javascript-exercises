@@ -174,7 +174,8 @@ orange-colored background?
 var fruits = document.__(__);
 var orange = fruits[__];
 
-orange.__.__ = "orange"; orange.__.__ = "white";
+orange.__.__ = "orange";
+orange.__.__ = "white";
 // should change the display so that the <li>orange</li> element is rendered in
 // white text on an orange background
 ```
@@ -186,6 +187,8 @@ Search suggestion: `change css of element javascript`
 > use the `:nth-child` pseudo-selector.
 
 ### Adding and removing classes
+
+
 
 ### Hide and show elements
 
