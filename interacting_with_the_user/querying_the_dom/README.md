@@ -170,7 +170,7 @@ console.log(allFruit);
 
 Search suggestion: `javascript find elements by class using querySelector`
 
-> Don't forget to prepend your id selector with a `.`!
+> Don't forget to prepend your class selector with a `.`!
 
 ### Search by class name part two
 
