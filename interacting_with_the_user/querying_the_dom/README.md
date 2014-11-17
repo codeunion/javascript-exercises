@@ -112,11 +112,13 @@ console.log(fruits);
 Search suggestion: `select multiple elements from the DOM` (note: you can
 exclude links to jQuery methods by addign `-jquery` to your search)
 
-> Note the [CSS-like selector syntax](https://developer.mozilla.org/en-
-> US/docs/Web/Guide/CSS/Getting_started/Selectors) that is used by both the
-> `querySelector()` and `querySelectorAll()` methods. You can pass them strings
-> that follow a similar syntax to select elements in the same way you would in
-> CSS.
+> Note the CSS-like selector syntax that is used by both the `querySelector()`
+> and `querySelectorAll()` methods. You can pass them strings that follow a
+> similar syntax to select elements in the same way you would in CSS. To learn
+> more about CSS selectors, check out
+> [the wiki](https://github.com/codeunion/fundamentals-of-web-development/wiki/Basics-of-CSS#basics-of-selectors)
+> or some
+> [documentation on MDN](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started/Selectors).
 
 ### Search by tag name
 
