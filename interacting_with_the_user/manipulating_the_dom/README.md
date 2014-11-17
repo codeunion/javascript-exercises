@@ -334,3 +334,39 @@ Search suggestion: `javascript add element to dom`
 > depending on where in the list of children the new element should be added.
 
 ### Special methods of elements
+
+There are lots of ways to interact with elements on the DOM. Remember that all
+HTML elements are of type `HTMLElement` and thus they inherit properties and
+methods from their ancestor types:
+
+- [`HTML Element`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement)
+- [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element)
+- [`Node`](https://developer.mozilla.org/en-US/docs/Web/API/Node)
+
+There are a few other types in the chain, but these are the main ones.
+
+Can you use your searching savvy and the above documentation to figure out how
+to complete the DOM manipulation code below?
+
+```javascript
+var subscribeForm = document.querySelector("form.subscribe-form"); // get form
+console.log( subscribeForm.__("name") ); // read name attribute
+// should print "newsletter-signup"
+
+subscribeForm.__("action", "/subscribe"); // set action attribute
+console.log( subscribeForm.__("action") ); // read action attribute
+// should print "/subscribe"
+
+var subscribeEmail = subscribeForm.__("input[name='email-address']");
+subscribeEmail.__(); // set focus to email input field
+
+var submitBtn = subscribeForm.__("input[type='submit']");
+submitBtn.__("value", "JOIN ME");
+// should change the text of the submit button to "JOIN ME"
+
+// what will this do?
+//
+// setTimeout(function() {
+//   submitBtn.click();
+// }, 1000);
+```
