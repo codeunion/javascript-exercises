@@ -26,7 +26,7 @@ Can you use `setTimeout` to delay execution of a callback function?
 
 ```javascript
 console.log("Wait for it...");
-__(function() { __.__(__) }, __);
+__(function() { console.log("NOW!") }, __);
 // should print "NOW!" after waiting one second
 ```
 
@@ -58,7 +58,7 @@ Search suggestion: `how does setTimeout work javascript`
 Can you write code to prevent the bomb from going off?
 
 ```javascript
-__ __ = setTimeout(function() { console.log("KABOOM!!") }, 7000);
+var bombTimeoutID = setTimeout(function() { console.log("KABOOM!!") }, 7000);
 __(__);
 ```
 
