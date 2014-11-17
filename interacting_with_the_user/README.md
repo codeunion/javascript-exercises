@@ -21,3 +21,7 @@ We're going to explore the ways that JavaScript allows for user interaction.
 
 * [Command Line Arguments](command_line_arguments)
 * [STDIN and STDOUT](stdin_and_stdout)
+
+### Level 2 - Finding and Changing Elements on a Web Page
+
+* [Querying the DOM](querying_the_dom)
