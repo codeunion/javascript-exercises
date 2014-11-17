@@ -55,3 +55,4 @@ In node.js,
 ### Level 1 - Functions that Take Functions as Inputs
 
 * [Passing Functions to Functions](passing_functions_to_functions)
+* [setTimeout and setInterval](settimeout_and_setinterval)
