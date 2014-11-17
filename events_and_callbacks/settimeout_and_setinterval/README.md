@@ -111,16 +111,18 @@ what you might find in an online banking account, for example)?
 
 ```javascript
 var warnTimeout = function() {
-  console.log("Your online banking session will end in 10 seconds...");
+  console.log("Your online banking session will end in 5 seconds...");
 };
+
 var sessionTimeout = function() {
   console.log("Your online banking session has timed out");
 };
-var sessionLength = 2 * 60 * 1000; // 2 minutes
-__(__, sessionLength - 10 * 1000); // 10 seconds before
+
+var sessionLength = 20 * 1000; // 20 seconds
+__(__, sessionLength - 5 * 1000); // 5 seconds before
 __(__, sessionLength);
-// should print a warning in 1 min 50 seconds
-// and a session timeout notice in 2 minutes
+// should print a warning in 15 seconds
+// and a session timeout notice in 20 seconds
 ```
 
 ### Intervals do something over and over and over and...
