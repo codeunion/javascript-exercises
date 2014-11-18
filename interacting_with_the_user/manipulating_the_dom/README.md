@@ -1,6 +1,6 @@
 # Manipulating the DOM
 
-Once you've learned how to [query the DOM](../querying_the_dom) and select
+Once you've learned how to [query the DOM](../querying_the_dom) to select
 elements from your web page, the next question is: what can you do with those
 elements?
 
@@ -8,7 +8,7 @@ When we write JavaScript, most of the time we will be writing programs that
 affect the DOM, and thus, the user interface. There are many ways to do this. A
 small sampling:
 
-- Show a chat window on the page when a users starts a new chat session
+- Show a chat window on the page when a user starts a new chat session
 - Zoom in on the map when a user clicks on the "+" button
 - When a user selects a preferred airline, highlight matching flights in yellow
 
