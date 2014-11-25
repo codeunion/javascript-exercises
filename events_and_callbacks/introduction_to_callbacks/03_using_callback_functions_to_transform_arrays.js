@@ -4,28 +4,14 @@
 // 3. Verify it works by running the file with the `node` command line program.
 // 4. Repeat until all use cases are functioning.
 
-// This function checks if the contents of an array are equal to one another.
-// Why? Because `['hi'] === ['hi']` is false in JavaScript. Le-sigh.
 var bothArraysAreEqual = function(arrayA, arrayB) {
-  // If arrayA and arrayB are the same object then we don't have to compare
-  // their elements.
-  // ```
-  // var a = ['hi', 'there'];
-  // var b = a;
-  // var c = ['hi', 'there'];
-  // a === b // True :(
-  // c === a // False
-  // ```
   if (arrayA === arrayB) { return true; }
 
-  // If arrayA and arrayB aren't the same length
-  // they can't possibly be the same
   if (arrayA.length !== arrayB.length) {
     return false;
   }
 
   for (var i = 0; i < arrayA.length; i++) {
-    // If any of the elements are different, BAIL OUT!
     if (arrayA[i] !== arrayB[i]) {
       return false;
     }
