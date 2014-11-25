@@ -13,42 +13,42 @@ This set of exercises is intended to be ran within the `node`
 
 1. Open a terminal and run `node`
 2. Work through each use case and replace `____`s with working code.
-3. Confirm the output from the command matches the expected output (denoted by
-   `>`)
+3. Confirm the output from the command matches the expected output.
 
 ## Exercises
 Knowing the length of a string is useful. [Docs for
 String.length](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length)
 
 ```javascript
-'hi there'.____; // Replace `____` with working code.
-> 8 // The `>` indicates REPL output. No need to type it.
-'what's happening?'.____ // Replace `____` with working code.
-> 17
+// The > is the REPL prompt. Don't type it!
+> 'hi there'.____; // Replace ____ with working code.
+8
+> 'what's happening?'.____; // Replace ____ with working code.
+17
 ```
 Let's swap some words around. [Docs for
 String.prototype.replace](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace)
 
 ```javascript
 // You know the drill.  Replace `____` with appropriate code.
-'Pretty sure zee is the lamest'.____('lamest', 'coolest');
-> 'Pretty sure zee is the coolest'
-'Dead men tell no tales'.____('tales', 'rails');
-> 'Dead men tell no rails'
+> 'Pretty sure zee is the lamest'.____('lamest', 'coolest');
+'Pretty sure zee is the coolest'
+> 'Dead men tell no tales'.____('tales', 'rails');
+'Dead men tell no rails'
 ```
 
 Finding a string inside of another string can be useful. [Docs for
 String.prototype.match](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match)
 
 ```javascript
-'What kind of madness is this?'.____('madness');
-> [ 'madness',
+> 'What kind of madness is this?'.____('madness');
+[ 'madness',
     index: 13,
     input: 'What kind of madness is this?' ]
-'When there is nothing you can find'.____('something');
-> null
-'You can even use regular expressions!'.____(/(\w{3})/i);
-> [ 'You'
+> 'When there is nothing you can find'.____('something');
+null
+> 'You can even use regular expressions!'.____(/(\w{3})/i);
+[ 'You'
     index: 0,
     input: 'You can even use regular expressions!' ]
 ```
@@ -61,13 +61,13 @@ or even encryption. [Docs for
 String.prototype.split](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)
 
 ```javascript
-'Hey there voters!'.____(' ');
-> [ 'Hey', 'there', 'voters!' ]
-'Such a character!'.____(''); // Notice an empty string tells JavaScript to split
-                            // a string into individual characters.
-> [ 'S', 'u', 'c', 'h', ' ', 'a', ' ', 'c', 'h', 'a', 'r', 'a', 'c', 't', 'e', 'r', '!' ]
-'eggs, bacon, cheese, tomato, kale,'.____(____);
-> [ 'eggs', 'bacon', 'cheese', 'tomato', 'kale,' ]
+> 'Hey there voters!'.____(' ');
+[ 'Hey', 'there', 'voters!' ]
+> 'Such a character!'.____(''); // Notice an empty string tells JavaScript to split
+                                // a string into individual characters.
+[ 'S', 'u', 'c', 'h', ' ', 'a', ' ', 'c', 'h', 'a', 'r', 'a', 'c', 't', 'e', 'r', '!' ]
+> 'eggs, bacon, cheese, tomato, kale,'.____(____);
+[ 'eggs', 'bacon', 'cheese', 'tomato', 'kale,' ]
 ```
 
 
@@ -76,57 +76,56 @@ string is useful when parsing protocols like HTTP, etc. [Docs for
 String.prototype.slice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice)
 
 ```javascript
-'Name: Zee'.____(6);
-> 'Zee'
-'Favorite Color: Chartreuse'.____(____);
-> 'Chartreuse'
-'Favorite Animal: Catapult'.____(____,3);
-> 'Cat'
-'Weirdest Trait: Can lick elbow'.____(-14);
-> 'Can lick elbow'
+> 'Name: Zee'.____(6);
+'Zee'
+> 'Favorite Color: Chartreuse'.____(____);
+'Chartreuse'
+> 'Favorite Animal: Catapult'.____(____,3);
+'Cat'
+> 'Weirdest Trait: Can lick elbow'.____(-14);
+'Can lick elbow'
 ```
 
 Find the first location of a character. [Docs for
 String.prototype.indexOf](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf)
 
 ```javascript
-'Pork: The Other White Meat'.____(':');
-> 4
-'Moods: Happy, Sad, Grumpy'.____(',');
-> 12
-'Friend or foe?'.____('E');
-> -1
+> 'Pork: The Other White Meat'.____(':');
+4
+> 'Moods: Happy, Sad, Grumpy'.____(',');
+12
+> 'Friend or foe?'.____('E');
+-1
 ```
 
 And the last location. [Docs for
 String.prototype.lastIndexOf](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/lastIndexOf)
 
 ```javascript
-'Groceries: avacados, bananas, strawberries, oregano'.____(',')
-> Should evaluate to 42
+> 'Groceries: avacados, bananas, strawberries, oregano'.____(',')
+Should evaluate to 42
 ```
 
 Lets join some strings together. [Docs for
 String.prototype.concat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/concat)
 
-```
-'Hello'.____('World')
-> 'HelloWorld'
-
-'Hey'.____('Thats', 'A', 'Lot','Of','Words')
-> 'HeyThatsALotOfWords'
+```javascript
+> 'Hello'.____('World');
+'HelloWorld'
+> 'Hey'.____('Thats', 'A', 'Lot','Of', 'Words');
+'HeyThatsALotOfWords'
 ```
 
 Sometime's we'll want some quotes in our quotes.
 
-```
-'They said: ____'Yo____''
-> 'They said: 'Yo''
-____Or you could use a different 'kind' of quotes____
-> 'Or you could use a different 'kind' of quotes'
+```javascript
+> 'They said: ____'Yo____'';
+'They said: \'Yo\''
+> ____Or you could use a different 'kind' of quotes____;
+'Or you could use a different \'kind\' of quotes'
 ```
 
-Search suggestion: 'Escaping quotes in JavaScrip'
+Search suggestion: 'Escaping quotes in JavaScript'
 
 ### Put It Together!
 
