@@ -48,7 +48,7 @@ function smarterShouldIBuyThis(cost, balance, strategy) {
 if (!module.parent) {
   // Uncomment each use case and get it working before moving to the next.
   // You will know the code works because the word 'true' will appear when
-  // you run `node 01_introducing_predicate_functions.js`
+  // you run `node introducing_predicate_functions.js`
 
   // We're going to use a callback to decide whether we want to buy an item or
   // not, based on our accounta balance. This kind of callback function (one

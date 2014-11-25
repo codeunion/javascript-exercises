@@ -28,7 +28,7 @@ var favoriteAnimal = function(animalTranslator) {
 if (!module.parent) {
   // Uncomment each use case and get it working before moving to the next.
   // You will know the code works because the word 'true' will appear when
-  // you run `node 00_passing_functions_to_functions.js`
+  // you run `node passing_functions_to_functions.js`
 
   // Because functions are data in JavaScript you can pass them as arguments to
   // other functions. Functions passed to another function to be called are

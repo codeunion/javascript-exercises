@@ -129,7 +129,7 @@ Search suggestion: 'Escaping quotes in JavaScript'
 
 ### Put It Together!
 
-Open the file `00_questions_and_answers.js` and write a function that given a
+Open the file `questions_and_answers.js` and write a function that given a
 string of the format 'Question: Answer' returns the "Answer" section.
 
-Verify your implementation works by running `node 00_questions_and_answers.js`.
+Verify your implementation works by running `node questions_and_answers.js`.

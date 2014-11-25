@@ -12,11 +12,12 @@ JavaScript.
 
 ## Let's Get Started
 
-1. Open the first javascript file in this directory.
-2. Scroll to the bottom to get to the use cases.
-3. Uncomment the first use case and make it work. (Frequently this means
+1. Open the first javascript file as noted by [the suggested
+   order](00_SUGGESTED_ORDER.md).
+2. Review the use cases at the bottom of the javascript file.
+3. Uncomment the first use case and make the code work. (Frequently this means
    replacing `____`s with code of your own.)
-4. Verify it works. (Run the file in `node`.)
+4. Verify it works. (Run the javascript file with `node`.)
 5. Repeat steps 3 and 4 until all use cases are working.
 6. Repeat steps 1 to 5 until you've worked through all the javascript files.
 7. Submit a request for feedback on your commits!

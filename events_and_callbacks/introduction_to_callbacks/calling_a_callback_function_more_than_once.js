@@ -57,7 +57,6 @@ var each = function(array, ____) {
 
 // USE CASES ARE HERE. STOP SCROLLING! STOOOPPPPPPP.
 // OK, now read on!
-//
 if (!module.parent) {
   // Callback functions provide a powerful way to enable code re-use.
   // Given the above functions, can you replace the '____'s with code to
@@ -65,7 +64,7 @@ if (!module.parent) {
 
   // Uncomment each use case and get it working before moving to the next.
   // You will know the code works because the word 'true' will appear when
-  // you run `node 02_calling_a_callback_function_more_than_once.js`
+  // you run `node calling_a_callback_function_more_than_once.js`
 
   /*
   // Find, uncomment and implement the 'doThisManyTimes' function above. Then

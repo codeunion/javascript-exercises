@@ -61,7 +61,7 @@ if (!module.parent) {
 
   // Uncomment each use case and get it working before moving to the next.
   // You will know the code works because the word 'true' will appear when
-  // you run `node 03_using_callback_functions_to_transform_arrays.js`
+  // you run `node using_callback_functions_to_transform_arrays.js`
 
   /*
   // Defining an array, calling each on another array, and filling the new array
