@@ -23,6 +23,8 @@ var favoriteAnimal = function(animalTranslator) {
   return animalTranslator('animals are the best!');
 }
 
+// !module.parent is true if the file is being ran directly in node
+// and false when being required by another file.
 if (!module.parent) {
   // Uncomment each use case and get it working before moving to the next.
   // You will know the code works because the word 'true' will appear when
