@@ -51,4 +51,5 @@ if (!module.parent) {
   // console.log(favoriteAnimal(function(sentence) {
   //   ____ ____.____('animal', 'aardvark');
   // } === 'aardvarks are the best!');
+  // This is known as an "anonymous function"
 }
