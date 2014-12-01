@@ -5,16 +5,16 @@
 // 4. Repeat until all use cases are functioning.
 
 // This function checks if the contents of an array are equal to one another.
-// Why? Because `['hi'] === ['hi']` is false in JavaScript. Le-sigh.
+// Why? Because `["hi"] === ["hi"]` is false in JavaScript. Le-sigh.
 var bothArraysAreEqual = function(arrayA, arrayB) {
   // If arrayA and arrayB are the same object then we don't have to compare
   // their elements.
   // ```
-  // var a = ['hi', 'there'];
+  // var a = ["hi", "there"];
   // var b = a;
-  // var c = ['hi', 'there'];
-  // a === b // True :(
-  // c === a // False
+  // var c = ["hi", "there"];
+  // a === b; // True :(
+  // c === a; // False
   // ```
   if (arrayA === arrayB) { return true; }
 
@@ -45,13 +45,13 @@ var doThisManyTimes = function(numberOfTimes, ____) {
 
 /*
 // This function will go over every element in an array one by one, calling the
-// callback with each item. Replace the '____'s to make it work.
+// callback with each item. Replace the `____`s to make it work.
 var each = function(array, ____) {
   for (var ____ = ____; ____ < array.length; ____++) {
     var ____ = array[i];
     ____(____);
   }
-}
+};
 */
 
 
@@ -59,27 +59,27 @@ var each = function(array, ____) {
 // OK, now read on!
 if (!module.parent) {
   // Callback functions provide a powerful way to enable code re-use.
-  // Given the above functions, can you replace the '____'s with code to
+  // Given the above functions, can you replace the `____`s with code to
   // cause the expected result?
 
   // Uncomment each use case and get it working before moving to the next.
-  // You will know the code works because the word 'true' will appear when
+  // You will know the code works because the word "true" will appear when
   // you run `node calling_a_callback_function_more_than_once.js`
 
   /*
-  // Find, uncomment and implement the 'doThisManyTimes' function above. Then
+  // Find, uncomment and implement the `doThisManyTimes` function above. Then
   // update this code to use it.
   var wows = [];
   ____(5, function() {
-    wows.push('wow!');
+    wows.push("wow!");
   });
 
-  var expectedWows = ['wow!', 'wow!', 'wow!', 'wow!', 'wow!']
+  var expectedWows = ["wow!", "wow!", "wow!", "wow!", "wow!"];
   console.log(bothArraysAreEqual(wows, expectedWows));
   */
 
   /*
-  // Find, uncomment and implement the 'each' function above, then update this
+  // Find, uncomment and implement the `each` function above, then update this
   // code to use it.
   var doubles = [];
   ____([4, 2, 9], ____(num) {
@@ -96,12 +96,12 @@ if (!module.parent) {
   // Let's re-use one of our functions to reverse a list of words!
   reversedWords = [];
   var ____ = ____(____) {
-    ____.____(____.split('').reverse().join(''));
+    ____.____(____.split("").reverse().join(""));
   };
 
-  each(['qatar', 'zinfandel', 'onomatopoeia'], reverseWords);
+  each(["qatar", "zinfandel", "onomatopoeia"], reverseWords);
 
-  expectedReversedWords = ['rataq', 'lednafniz', 'aieopotamono']
+  expectedReversedWords = ["rataq", "lednafniz", "aieopotamono"];
   console.log(bothArraysAreEqual(reversedWords, whatReversedWordsShouldBe));
   */
 
@@ -110,15 +110,15 @@ if (!module.parent) {
   // Let's build a list of strings of Q's of varying lengths!
   listOfQs = [];
   var addQs = function(number) {
-    var q = '';
+    var q = "";
     while (number > 0) {
-      q = q + 'Q';
+      q = q + "Q";
       number = number - 1;
     }
     ____.____(q);
   };
 
-  var expectedListOfQs = ['QQQ', 'Q', 'QQQQQQQ']
+  var expectedListOfQs = ["QQQ", "Q", "QQQQQQQ"];
   ____([3,1,7], addQs);
   console.log(bothArraysAreEqual(listOfQs, expectedListOfQs));
   */

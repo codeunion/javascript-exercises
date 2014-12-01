@@ -17,27 +17,26 @@ var bothArraysAreEqual = function(arrayA, arrayB) {
     }
   }
   return true;
-}
+};
 
 /*
 // This function will go over every element in an array one by one, calling the
-// callback with each item, and building a new array with the callbacks return
-// values. Replace the '____'s to make it work.
+// callback with each item, and building a new array with the callback's return
+// values. Replace the `____`s to make it work.
 var map = function(____, ____) {
   var newArray = [];
   for (var ____ = ____; ____ < ____.____; ____++) {
     var ____ = ____[____];
-    newArray[____] = ____(____)
+    newArray[____] = ____(____);
   }
   return newArray;
-}
+};
 */
 
 /*
 // This function will go over every element in an array one by one, calling the
-// callback with each item, and adding the elements the callback returns true
-// for to a new array that it returns.
-
+// callback with each item, adding the element to a new array only if
+// the callback returns true, and finally returning the new array.
 var filter = function(____, ____) {
   var filteredArray = [];
   for (var ____ = ____; ____ < ____.____; ____++) {
@@ -47,7 +46,7 @@ var filter = function(____, ____) {
     }
   }
   return filteredArray;
-}
+};
 */
 
 
@@ -60,17 +59,17 @@ if (!module.parent) {
   // array with the callback applied to it.
 
   // Uncomment each use case and get it working before moving to the next.
-  // You will know the code works because the word 'true' will appear when
+  // You will know the code works because the word "true" will appear when
   // you run `node using_callback_functions_to_transform_arrays.js`
 
   /*
   // Defining an array, calling each on another array, and filling the new array
-  // is a common pattern known as 'mapping.'
-  // Find, uncomment, and implement the 'map' function defined above and fill in
+  // is a common pattern known as "mapping".
+  // Find, uncomment, and implement the "map" function defined above and fill in
   // the `____`s to make it work.
   var square = function(number) {
     return number * number;
-  }
+  };
   var squaredNumbers = map([2, 8, 3], square);
 
   var expectedSquaredNumbers = [4, 64, 9];
@@ -79,24 +78,24 @@ if (!module.parent) {
 
   /*
   // Let's shout some words:
-  var shoutedWords = ____(['one', 'two', 'three'], ____(____) {
+  var shoutedWords = ____(["one", "two", "three"], ____(____) {
     ____ ____.toUpperCase();
   });
 
-  var expectedShoutedWords = ['ONE', 'TWO', 'THREE'];
+  var expectedShoutedWords = ["ONE", "TWO", "THREE"];
   console.log(bothArraysAreEqual(shoutedWords, expectedShoutedWords));
   */
 
   /*
-  // Sometime's you'll want to take an array and remove elements that don't
-  // match certain criteria. Uncomment and implement the 'filter' function in
+  // Sometimes you'll want to take an array and remove elements that don't
+  // match certain criteria. Uncomment and implement the "filter" function in
   // the source code above.
   //
   // A callback that returns a boolean (a true or false value) is known as a
-  // "predicate"
+  // "predicate".
 
   var onlyEvenNumbers = filter([2, 9, 6, 8, 4], ____(____) {
-    ____ ____ % 2 === 0
+    ____ ____ % 2 === 0;
   });
 
   console.log(bothArraysAreEqual(onlyEvenNumbers, [2, 6, 8, 4]);
@@ -107,9 +106,9 @@ if (!module.parent) {
   // Yes. That letter is Z.
 
   var bestWordPredicate = function(____) {
-    return ____.toUpperCase().charAt(0) === 'Z';
-  }
-  var onlyAwesomeWords = ____(['zookeeper', 'zelda', 'misanthrope', 'anarchy', 'acrostic'], ____);
-  console.log(bothArraysAreEqual(onlyAwesomeWords, ['zookeeper', 'zelda']));
+    return ____.toUpperCase().charAt(0) === "Z";
+  };
+  var onlyAwesomeWords = ____(["zookeeper", "zelda", "misanthrope", "anarchy", "acrostic"], ____);
+  console.log(bothArraysAreEqual(onlyAwesomeWords, ["zookeeper", "zelda"]));
   */
 }
