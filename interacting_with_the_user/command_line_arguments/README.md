@@ -14,9 +14,8 @@ $ node script.js foo # the $ is the shell prompt. Don't type it! # is a comment.
 
 Solve the exercises to learn how to work with command line arguments in node.js.
 
-
 ## Let's Get Started
 
 1. Review the [suggested order](00_SUGGESTED_ORDER.md).
-1. Work through the exercises in the javascript files.
-1. Submit a request for feedback!
+2. Work through the exercises in the JavaScript files.
+3. Submit a request for feedback!

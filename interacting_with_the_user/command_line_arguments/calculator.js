@@ -1,8 +1,9 @@
 // Let's do something a bit more interesting and useful with the input: we will
 // write a rudimentary calculator that can solve basic arithmetic expressions.
 //
-// Complete the code required to make this calculator function as expected?
-// Search suggestion: convert string to number javascript
+// Complete the code required to make this calculator function as expected.
+//
+// Search suggestion: "convert string to number javascript"
 
 var expression = ____.____[____].split(' ');
 
@@ -28,8 +29,8 @@ switch (operator) {
     break;
 }
 
-// Run the following in your terminal to verify your code:
-// (The $ is the terminal prompt. Don't type it!)
+// Run the following commands to verify that your code produces the output shown.
+//
 // $ node calculator.js "2 + 7"
 // 9
 //

@@ -1,4 +1,5 @@
-// Often times command line arguments are used to determine what code to run.
+// Often times command line arguments are used to determine which code to run.
+//
 // Complete the conditional so it responds to each command line argument
 // appropriately.
 
@@ -14,14 +15,16 @@ if (animal === ____) {
   console.log(____);
 }
 
-// Run the following in your terminal to verify your code:
-// (The $ is the terminal prompt. Don't type it!)
+// Run the following commands to verify that your code produces the output shown.
 //
 // $ node what_does_fox_say.js cow
 // mooooooo
+//
 // $ node what_does_fox_say.js dog
 // woof
+//
 // $ node what_does_fox_say.js fish
 // >() >() >()
+//
 // $ node what_does_fox_say.js fox
 // ???
