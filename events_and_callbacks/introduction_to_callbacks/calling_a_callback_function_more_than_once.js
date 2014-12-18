@@ -102,7 +102,7 @@ if (!module.parent) {
   each(["qatar", "zinfandel", "onomatopoeia"], reverseWords);
 
   expectedReversedWords = ["rataq", "lednafniz", "aieopotamono"];
-  console.log(bothArraysAreEqual(reversedWords, whatReversedWordsShouldBe));
+  console.log(bothArraysAreEqual(reversedWords, expectedReversedWords));
   */
 
 
