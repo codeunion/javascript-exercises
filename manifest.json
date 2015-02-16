@@ -1,0 +1,18 @@
+{
+  "category": "exercise",
+  "tags": [
+    "javascript",
+    "evented-programming",
+    "callbacks",
+    "document-object-model",
+    "basic-syntax",
+    "data-structures",
+    "node-js",
+    "algorithms",
+    "data-types",
+    "control-flow",
+    "encoding",
+    "data-transformation"
+  ],
+  "notes": "Incomplete. Still missing many chapters. Formatting inconsistent."
+}
