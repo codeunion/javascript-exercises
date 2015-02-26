@@ -17,7 +17,7 @@ For maximum effectiveness:
 
 ### Practice Coding Session Instructions
 1. Checkout a new branch for your session: `git checkout -b
-1  zee/exercises-10-15-2014` (With your own name/date)
+   zee/exercises-10-15-2014` (With your own name/date)
 1. Start a timer for between 30 minutes to two hours.
 1. Pick a target area and level and do each exercise.
 1. Repeat previous step until timer expires.
